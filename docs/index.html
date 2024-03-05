@@ -102,7 +102,7 @@
 
         // Fetch existing records when the window is loaded
         window.addEventListener("load", async function () {
-            let response = await fetch('https://pmap-28a9a9408e2b.herokuapp.com/api/get-record', {
+            let response = await fetch('https://lab-pgis-e26242fb31f3.herokuapp.com/api/get-record', {
                 method: 'GET'
             });
 
@@ -138,7 +138,7 @@
                 'source': 'places',
                 'paint': {
                     'circle-radius': 6,
-                    'circle-color': '#B42222'
+                    'circle-color': '#5D3FD3'
                 }
             });
         });
@@ -207,7 +207,7 @@
 
             try {
                 // Send the POST request to add the new record
-                await fetch('https://pmap-28a9a9408e2b.herokuapp.com/api/add-record', settings);
+                await fetch('https://lab-pgis-e26242fb31f3.herokuapp.com/api/add-record', settings);
             } catch (err) {
                 // Handle any errors that occur during the request
                 console.error(err);
